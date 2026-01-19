@@ -1,12 +1,12 @@
-# 🌾 AgriMetrix – Team Snack Overflow
+# AgriMetrix – Team Snack Overflow
 
-## 📌 Project Description
+## Project Description
 **AgriMetrix** is an AI/ML-powered agricultural intelligence platform that empowers farmers with **machine learning-driven crop recommendations**, **market demand forecasting**, and **smart crop rotation planning**.  
 Our mission is to modernize Indian farming through **data-driven decisions** and **sustainable practices**, benefiting all stakeholders in the agricultural ecosystem.
 
 ---
 
-## 🚀 Live Deployments
+## Live Deployments
 - **Application:** [https://anndata.netlify.app/](https://anndata.netlify.app/)
 - **Backend API:** [https://ann-data-api.onrender.com](https://ann-data-api.onrender.com)
 - **ML API:** [https://ann-data-ml.onrender.com](https://ann-data-ml.onrender.com)
@@ -14,17 +14,7 @@ Our mission is to modernize Indian farming through **data-driven decisions** and
 - **Local Swagger:** [http://localhost:3000/api-docs](http://localhost:3000/api-docs)
 
 ---
-
-## Team Members
-- [Sohan Raut](https://github.com/SRx210)
-- [Vivek Naik](https://github.com/VivekNaik0309)
-- [Shivam Shirodkar](https://github.com/Shivamshirodkarrr)    
-- [Modinasab Y. Pinjar](https://github.com/ModinasabPinjar)  
-- [Nikesh Thorat](https://github.com/Nikeshthorat)  
-
----
-
-## 🛠 Tech Stack
+## Tech Stack
 - **Frontend:** React.js, Axios, CSS Grid/Flexbox, Responsive Design
 - **Backend:** Node.js, Express.js, JWT Authentication, Swagger Documentation
 - **Database:** MongoDB with Mongoose ODM
@@ -34,29 +24,29 @@ Our mission is to modernize Indian farming through **data-driven decisions** and
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-### 🧠 **AI-Powered ML Insights**
-✅ **Smart Crop Recommendation** - AI analyzes soil nutrients (N, P, K), weather conditions (temperature, humidity, rainfall), and pH levels to recommend optimal crops  
-✅ **Market Demand Forecasting** - Predict crop demand by region and season using historical market data  
-✅ **Intelligent Crop Rotation** - AI-driven crop rotation planning to optimize soil health and maximize yields  
+### AI-Powered ML Insights
+**Smart Crop Recommendation** - AI analyzes soil nutrients (N, P, K), weather conditions (temperature, humidity, rainfall), and pH levels to recommend optimal crops  
+**Market Demand Forecasting** - Predict crop demand by region and season using historical market data  
+**Intelligent Crop Rotation** - AI-driven crop rotation planning to optimize soil health and maximize yields  
 
-### 🌐 **Core Platform Features**
-✅ **Crop Disease Detection** - Upload crop images for AI-powered disease identification  
-✅ **JWT-based Authentication** - Secure user registration and login system  
-✅ **Interactive Dashboard** - User-friendly interface with tabbed ML insights  
-✅ **Real-time Predictions** - Live ML model inference with confidence scores  
-✅ **Responsive Design** - Mobile-first UI optimized for farmers in the field  
+### Core Platform Features
+**Crop Disease Detection** - Upload crop images for AI-powered disease identification  
+**JWT-based Authentication** - Secure user registration and login system  
+**Interactive Dashboard** - User-friendly interface with tabbed ML insights  
+**Real-time Predictions** - Live ML model inference with confidence scores  
+**Responsive Design** - Mobile-first UI optimized for farmers in the field  
 
-### 🔧 **Technical Features**
-✅ **RESTful API Architecture** - Well-documented endpoints with Swagger UI  
-✅ **Microservices Design** - Separate ML API service for scalability  
-✅ **Error Handling & Validation** - Robust input validation and fallback mechanisms  
-✅ **Debug Mode** - Development tools for troubleshooting ML responses  
+### Technical Features
+**RESTful API Architecture** - Well-documented endpoints with Swagger UI  
+**Microservices Design** - Separate ML API service for scalability  
+**Error Handling & Validation** - Robust input validation and fallback mechanisms  
+**Debug Mode** - Development tools for troubleshooting ML responses  
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```
 AnnData-SnackOverflow/
 ├── frontend/                 # React.js Frontend Application
@@ -97,7 +87,7 @@ AnnData-SnackOverflow/
 
 ---
 
-## 🧪 API Testing & Documentation
+## API Testing & Documentation
 
 ### **Health Check Endpoints**
 ```http
@@ -119,9 +109,9 @@ POST /api/ml/crop-rotation         # Smart crop rotation planning
 
 ---
 
-## 🎯 ML Features Usage
+## ML Features Usage
 
-### **🌱 Crop Recommendation**
+### Crop Recommendation
 Input soil nutrients and environmental data to get AI-powered crop suggestions:
 ```json
 {
@@ -131,7 +121,7 @@ Input soil nutrients and environmental data to get AI-powered crop suggestions:
 }
 ```
 
-### **📈 Market Demand Forecast**
+### Market Demand Forecast
 Predict crop demand by region and time:
 ```json
 {
@@ -140,7 +130,7 @@ Predict crop demand by region and time:
 }
 ```
 
-### **🔄 Crop Rotation Planning**
+### Crop Rotation Planning
 Get intelligent crop rotation recommendations:
 ```json
 {

@@ -109,6 +109,52 @@ POST /api/ml/crop-rotation         # Smart crop rotation planning
 
 ---
 
+## Installation & Setup
+
+### Prerequisites
+- Node.js (v14 or higher)
+- Python 3.8+
+- MongoDB (local or Atlas)
+- Git
+
+### Backend Setup
+```bash
+cd backend
+npm install
+
+# Configure environment variables
+echo "MONGODB_URI=your_mongodb_connection_string" > .env
+echo "JWT_SECRET=your_secret_key" >> .env
+echo "ML_API_URL=http://localhost:5000" >> .env
+
+# Start backend server
+node server.js
+```
+Server runs at `http://localhost:3000`
+
+### Frontend Setup
+```bash
+cd frontend
+npm install
+npm start
+```
+App runs at `http://localhost:3001`
+
+### ML API Setup
+```bash
+cd ml
+pip install -r requirements.txt
+
+# Train models (first time only)
+python pipeline.py
+
+# Start ML API
+python api.py
+```
+ML API runs at `http://localhost:5000`
+
+---
+
 ## ML Features Usage
 
 ### Crop Recommendation
@@ -120,6 +166,7 @@ Input soil nutrients and environmental data to get AI-powered crop suggestions:
   "ph": 6.5, "rainfall": 202
 }
 ```
+**Response:** Recommended crops with confidence scores
 
 ### Market Demand Forecast
 Predict crop demand by region and time:
@@ -129,6 +176,7 @@ Predict crop demand by region and time:
   "region": "Maharashtra", "crop": "Rice"
 }
 ```
+**Response:** Predicted demand with market insights
 
 ### Crop Rotation Planning
 Get intelligent crop rotation recommendations:
@@ -139,6 +187,78 @@ Get intelligent crop rotation recommendations:
   "nitrogen": 80, "phosphorous": 40, "potassium": 50
 }
 ```
+**Response:** AI-optimized crop rotation sequence
 
 ---
+
+## Testing
+
+### Backend API Tests
+```bash
+cd backend
+node test-endpoints.js
+```
+
+### ML Integration Tests
+```bash
+cd ml
+python test_integration.py
+```
+
+### Manual Testing
+- Import `backend/AnnData_API.postman_collection.json` into Postman
+- Test all endpoints with sample data
+
+---
+
+## Deployment
+
+### Backend (Render)
+1. Push code to GitHub
+2. Connect Render to your repository
+3. Configure environment variables
+4. Deploy from `backend/` directory
+
+### Frontend (Netlify)
+1. Build: `npm run build`
+2. Deploy `build/` folder to Netlify
+3. Configure environment variables
+
+### ML API (Render)
+1. Configure Python runtime
+2. Deploy from `ml/` directory
+3. Set start command: `python api.py`
+
+---
+
+## Documentation
+- **API Contract:** See [API_CONTRACT.md](API_CONTRACT.md)
+- **ML Integration Guide:** See [ML_INTEGRATION_GUIDE.md](ML_INTEGRATION_GUIDE.md)
+- **Model Evaluation:** See [ml/MODEL_EVALUATION_REPORT.md](ml/MODEL_EVALUATION_REPORT.md)
+
+---
+
+## Contributing
+Developed by **Team Snack Overflow** for Smart India Hackathon 2024
+
+### Team Members
+- Full Stack Development
+- ML/AI Engineering
+- UI/UX Design
+- Database Architecture
+
+---
+
+## License
+MIT License - Built for farmers, by developers who care.
+
+---
+
+## Support
+For issues or questions:
+- Check the documentation files
+- Review Swagger API docs
+- Test endpoints using Postman collection
+
+**Last Updated:** January 2026
 
